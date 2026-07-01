@@ -5,6 +5,7 @@ import { FiArrowRight, FiUser, FiClock } from 'react-icons/fi';
 import { FaWallet, FaStore, FaMoneyBillWave, FaExchangeAlt, FaChartLine, FaLock, FaUserCog, FaCoins } from 'react-icons/fa';
 import { SiEthereum } from 'react-icons/si';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import WalletButton from '../components/web3/WalletButton';
 
 function Home() {
   const [openSections, setOpenSections] = useState({});
@@ -415,12 +416,10 @@ function Home() {
             >
               Browse Properties
             </Link>
-            <button
+            <WalletButton
               className="btn bg-primary-700 hover:bg-primary-800"
-            >
-              <FaWallet className="mr-2" />
-              Connect Wallet
-            </button>
+              showIcon
+            />
           </div>
         </div>
       </section>
